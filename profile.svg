@@ -1,0 +1,22 @@
+     <!--Viewbox permite escala correta em qualquer tela Sistema de coordenadas interno-->
+     <!--xmlns diz ao navegador que é um arquivo svg-->
+     <!--xlink namespace para itens clicáveis dentro do svg-->
+<svg width="900" height="460"
+     viewBox="0 0 900 460" 
+     xmlns="http://www.w3.org/2000/svg"  
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+     
+
+  <!--Desenha um retângulo que cobre toda a extensão do svg -->
+  <rect width="900" height="460" fill="#0d1117"/><!--cor do GitHub-->
+ 
+ <!--desenha o nome centralizado, sem preenchimento, com contorno azul-->
+<text x="450" y="80" text-anchor="middle" font-size="52" font-family="monospace" fill="none" stroke="#3193f8"
+stroke-width="2" stroke-dasharray="900" stroke-dashoffset="900">
+Cristiano Zeppe
+ <!-- Animação que "desenha" o contorno do texto da esquerda para direita em 3,5 segundos -->
+<animate attributeName="stroke-dashoffset" from="900" to="0" dur="3.5s" fill="freeze"/>
+
+</text>
+
+  </svg>
