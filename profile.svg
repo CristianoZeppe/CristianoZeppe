@@ -1,22 +1,151 @@
-     <!--Viewbox permite escala correta em qualquer tela Sistema de coordenadas interno-->
-     <!--xmlns diz ao navegador que é um arquivo svg-->
-     <!--xlink namespace para itens clicáveis dentro do svg-->
-<svg width="900" height="460"
-     viewBox="0 0 900 460" 
-     xmlns="http://www.w3.org/2000/svg"  
-     xmlns:xlink="http://www.w3.org/1999/xlink">
-     
+<!--Viewbox permite escala correta em qualquer tela Sistema de coordenadas interno-->
+<!--xmlns diz ao navegador que é um arquivo svg-->
+<!--xlink namespace para itens clicáveis dentro do svg-->
+<svg
+    width="900"
+    height="460"
+    viewBox="0 0 900 460"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
 
-  <!--Desenha um retângulo que cobre toda a extensão do svg -->
-  <rect width="900" height="460" fill="#0d1117"/><!--cor do GitHub-->
- 
- <!--desenha o nome centralizado, sem preenchimento, com contorno azul-->
-<text x="450" y="80" text-anchor="middle" font-size="52" font-family="monospace" fill="none" stroke="#3193f8"
-stroke-width="2" stroke-dasharray="900" stroke-dashoffset="900">
-Cristiano Zeppe
- <!-- Animação que "desenha" o contorno do texto da esquerda para direita em 3,5 segundos -->
-<animate attributeName="stroke-dashoffset" from="900" to="0" dur="3.5s" fill="freeze"/>
+    <!--Desenha um retângulo que cobre toda a extensão do svg -->
+    <rect
+        width="900"
+        height="460"
+        fill="#0d1117"
+    /><!--cor do GitHub-->
 
-</text>
+    <!--desenha o nome centralizado, sem preenchimento, com contorno azul-->
+    <text
+        x="450"
+        y="80"
+        text-anchor="middle"
+        font-size="52"
+        font-family="monospace"
+        fill="none"
+        stroke="#3193f8"
+        stroke-width="2"
+        stroke-dasharray="900"
+        stroke-dashoffset="900"
+    >
+        Cristiano Zeppe
 
-  </svg>
+        <!-- Animação que "desenha" o contorno do texto da esquerda para direita em 3,5 segundos -->
+        <animate
+            attributeName="stroke-dashoffset"
+            from="900"
+            to="0"
+            begin="1s"
+            dur="5s"
+            fill="freeze"
+        />
+    </text>
+
+    <!-- Desenha a profissão, que está abaixo do nome-->
+    <text
+        x="450"
+        y="120"
+        text-anchor="middle"
+        font-size="20"
+        fill="#c9d1d9"
+        font-family="monospace"
+        opacity="0"
+    >
+        Full-Stack Developer
+
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="1.5s"
+            dur="2s"
+            fill="freeze"
+        />
+    </text>
+
+    <!--Deslocar itens para posição correta-->
+    <g
+        transform="translate(390,160)"
+        opacity="0"
+    >
+        <animate
+            attributeName="opacity"
+            from="0"
+            to="1"
+            begin="1.5s"
+            dur="2s"
+            fill="freeze"
+        />
+
+        <!--Linkedin-->
+        <a
+            xlink:href="http://www.linkedin.com/in/cristiano-zeppe-860b57136"
+            target="_blank"
+        >
+            <rect
+                x="0"
+                y="0"
+                height="36"
+                width="36"
+                rx="6"
+                fill="#161b22"
+            />
+
+            <!-- Desenho do ícone -->
+            <path
+                d="M10 14h4v12h-4z
+                   M12 10a2 2 0 1 1 0-4
+                   2 2 0 0 1 0 4zm6 4h4v2h.1
+                   c.6-1.1 2-2.2 4.1-2.2
+                   4.4 0 5.2 2.9 5.2 6.6V26
+                   h-4v-5.3c0-1.3 0-3-1.9-3
+                   s-2.2 1.4-2.2 2.9V26h-4z"
+                fill="#3193f8"
+                transform="scale(0.8) translate(3 4)"
+            />
+        </a>
+        <!--Gmail-->
+        <a xlink:href="mailto:Cristianozeppe.dev@gmail.com"
+        target="_blank"
+        >
+        <rect x="50"
+             y="0"
+             width="36"
+             height="36"
+              rx="6"
+              fill="#161b22"
+          />
+
+  <path
+  d="
+    M8 12
+    H28
+    V24
+    H8
+    Z
+
+    M8 12
+    L18 19
+    L28 12
+
+    M8 24
+    L14 19
+
+    M28 24
+    L22 19
+  "
+  fill="none"
+  stroke="#36BCF7"
+  stroke-width="2"
+  stroke-linejoin="round"
+  stroke-linecap="round"
+  transform="translate(50 0)"
+/>
+
+
+ </a>
+
+    </g>
+
+</svg>
