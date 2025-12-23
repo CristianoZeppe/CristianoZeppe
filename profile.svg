@@ -36,8 +36,8 @@
             attributeName="stroke-dashoffset"
             from="900"
             to="0"
-            begin="1s"
-            dur="5s"
+            begin="0.5s"
+            dur="9s"
             fill="freeze"
         />
     </text>
@@ -58,98 +58,100 @@
             attributeName="opacity"
             from="0"
             to="1"
-            begin="1.5s"
-            dur="2s"
+            begin="1s"
+            dur="4s"
             fill="freeze"
         />
     </text>
 
-    <!--Deslocar itens para posição correta-->
-    <g
-        transform="translate(390,160)"
-        opacity="0"
-    >
-        <animate
-            attributeName="opacity"
-            from="0"
-            to="1"
-            begin="1.5s"
-            dur="2s"
-            fill="freeze"
-        />
+        <!--Linhas e bolinhas-->
+  <line x1="300" y1="160" x2="600" y2="160" stroke="#3193f8" stroke-width="2" stroke-dasharray="10 10" opacity="0" >
+      <animate attributeName="opacity"
+       from="0"
+       to="1"
+       begin="1.5s"
+       dur="4s"
+       fill="freeze" />
+    <animate attributeName="stroke-dashoffset"  from="0" to="50" begin="1.5s" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <line x1="450" y1="180" x2="450" y2="380" stroke="#3193f8" stroke-width="2" stroke-dasharray="6 6" opacity="0">
+   <animate attributeName="opacity"
+       from="0"
+       to="1"
+       begin="1.5s"
+       dur="7s"
+       fill="freeze" /> 
+       </line>
+            
+     <!-- Bolinhas com glow mais forte -->
+  <defs>
+    <filter id="glowHorizontal" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6 2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-        <!--Linkedin-->
-        <a
-            xlink:href="http://www.linkedin.com/in/cristiano-zeppe-860b57136"
-            target="_blank"
-        >
-            <rect
-                x="0"
-                y="0"
-                height="36"
-                width="36"
-                rx="6"
-                fill="#161b22"
-            />
+  <circle cx="450" cy="220" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
+   <animate attributeName="opacity"
+       from="0"
+       to="1"
+       begin="2s"
+       dur="2s"
+       fill="freeze" /> 
+       </circle>
+  <circle cx="450" cy="260" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
+  <animate attributeName="opacity"
+       from="0"
+       to="1"
+       begin="2.5s"
+       dur="2.5s"
+       fill="freeze" /> 
+       </circle>
+  <circle cx="450" cy="300" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
+    <animate attributeName="opacity"
+       from="0"
+       to="1"
+       begin="3s"
+       dur="3s"
+       fill="freeze" /> 
+       </circle>
+  <circle cx="450" cy="340" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
+   <animate attributeName="opacity"
+       from="0"
+       to="1"
+       begin="3.5s"
+       dur="3.5s"
+       fill="freeze" /> 
+       </circle>
 
-            <!-- Desenho do ícone -->
-            <path
-                d="M10 14h4v12h-4z
-                   M12 10a2 2 0 1 1 0-4
-                   2 2 0 0 1 0 4zm6 4h4v2h.1
-                   c.6-1.1 2-2.2 4.1-2.2
-                   4.4 0 5.2 2.9 5.2 6.6V26
-                   h-4v-5.3c0-1.3 0-3-1.9-3
-                   s-2.2 1.4-2.2 2.9V26h-4z"
-                fill="#3193f8"
-                transform="scale(0.8) translate(3 4)"
-            />
-        </a>
-        <!--Gmail-->
-        <a xlink:href="mailto:Cristianozeppe.dev@gmail.com"
-        target="_blank"
-        >
-        <rect x="50"
-             y="0"
-             width="36"
-             height="36"
-              rx="6"
-              fill="#161b22"
-          />
+       <!-- Texto das ações -->
+  <text x="430" y="225" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    Aprenda
+    <animate attributeName="opacity" from="0" to="1" begin="2s" dur="2s" fill="freeze"/>
+  </text>
+  <text x="470" y="265" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    Construa
+    <animate attributeName="opacity" from="0" to="1" begin="2.5s" dur="2.5s" fill="freeze"/>
+  </text>
+  <text x="430" y="305" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    Erre
+    <animate attributeName="opacity" from="0" to="1" begin="3s" dur="3s" fill="freeze"/>
+  </text>
+  <text x="470" y="345" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    Melhore
+    <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="3.5s" fill="freeze"/>
+  </text>
 
-  <path
-  d="
-    M8 12
-    H28
-    V24
-    H8
-    Z
+  
+  <!-- Contatos alinhados à esquerda -->
+  <g transform="translate(55, 370)">
 
-    M8 12
-    L18 19
-    L28 12
-
-    M8 24
-    L14 19
-
-    M28 24
-    L22 19
-  "
-  fill="none"
-  stroke="#36BCF7"
-  stroke-width="2"
-  stroke-linejoin="round"
-  stroke-linecap="round"
-  transform="translate(50 0)"
-/>
-
-
- </a>
-
-    </g>
-    <!-- LinkedIn -->
-    <a xlink:href="http://www.linkedin.com/in/cristiano-zeppe-860b57136" target="_blank">
-      <rect x="0" y="0" width="36" height="36" rx="6" fill="#161b22"/>
+   <!-- LinkedIn -->
+    <a xlink:href="http://www.linkedin.com/in/cristiano-zeppe-860b57136" target="_blank" transform="translate(5,20)" opacity="0">
+      <rect x="0" y="0" width="30" height="30" rx="6" fill="#161b22"/>
       <!-- Ícone do LinkedIn correto -->
       <path d="M10 14h4v12h-4z
                M12 10a2 2 0 1 1 0-4
@@ -158,8 +160,50 @@
                4.4 0 5.2 2.9 5.2 6.6V26
                h-4v-5.3c0-1.3 0-3-1.9-3
                s-2.2 1.4-2.2 2.9V26h-4z"
-            fill="#36BCF7" transform="scale(0.8) translate(3 4)"/>
+            fill="#3193f8" transform="scale(0.7) translate(3 4)"
+            />
+            <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="2.5s" fill="freeze"/>
     </a>
-    <text x="45" y="24" font-size="16" fill="#c9d1d9" font-family="monospace">http://www.linkedin.com/in/cristiano-zeppe-860b57136</text>
+     <!-- Define a máscara Linkedin -->
+<defs>
+  <mask id="revealLinkedin">
+    <rect x="0" y="0" width="0" height="30" fill="white">
+      <animate attributeName="width"
+               from="0"
+               to="400"   
+               dur="2.5s"
+               begin="3.5s"
+               fill="freeze" />
+    </rect>
+  </mask>
+</defs>
+    <text x="45" y="24" font-size="13" fill="#c9d1d9" font-family="monospace" transform="translate(0,18)" mask="url(#revealLinkedin)">www.linkedin.com/in/cristiano-zeppe-860b57136
+    </text>
+
+    <!-- E-mail -->
+    <a xlink:href="mailto:Cristianozeppe.dev@gmail.com" target="_blank" transform="translate(5,55)" opacity="0">
+      <rect x="0" y="0" width="30" height="30" rx="6" fill="#161b22"/>
+      <path d="M8 12 H28 V24 H8 Z M8 12 L18 19 L28 12 M8 24 L14 19 M28 24 L22 19"
+            fill="none" transform="scale(0.75) translate(3 4)" stroke="#3193f8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+            
+            <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="2.5s" fill="freeze"/>
+    </a>
+
+    <!-- Define a máscara email -->
+<defs>
+  <mask id="revealEmail">
+    <rect x="0" y="0" width="0" height="30" fill="white">
+      <animate attributeName="width"
+               from="0"
+               to="400"   
+               dur="2.5s"
+               begin="3.5s"
+               fill="freeze" />
+    </rect>
+  </mask>
+</defs>
+    <text x="45" y="24" transform="translate(0,50)" font-size="13" fill="#c9d1d9" font-family="monospace" mask="url(#revealEmail)">Cristianozeppe.dev@gmail.com
+    </text>
+  </g>
 
 </svg>
