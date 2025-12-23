@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <!-- Fundo do botão -->
+    <rect 
+        x="0" 
+        y="0" 
+        width="30" 
+        height="30" 
+        rx="6" 
+        fill="#161b22"
+    />
+
+    <!-- Ícone -->
+    <path
+        d="M10 14h4v12h-4z
+           M12 10a2 2 0 1 1 0-4
+           2 2 0 0 1 0 4zm6 4h4v2h.1
+           c.6-1.1 2-2.2 4.1-2.2
+           4.4 0 5.2 2.9 5.2 6.6V26
+           h-4v-5.3c0-1.3 0-3-1.9-3
+           s-2.2 1.4-2.2 2.9V26h-4z"
+        fill="#3193f8"
+        transform="scale(0.7) translate(3 4)"
+    />
+</svg>
