@@ -1,0 +1,90 @@
+<svg width="900" height="500" viewBox="0 0 900 500"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <!-- Fundo -->
+  <rect width="900" height="500" fill="#0d1117"/>
+
+  <!-- Texto principal -->
+  <text x="450" y="80" text-anchor="middle" font-size="52" font-family="monospace"
+        fill="none" stroke="#36BCF7" stroke-width="2" stroke-dasharray="900" stroke-dashoffset="900">
+    Cristiano Zeppe
+    <animate attributeName="stroke-dashoffset" from="900" to="0" dur="3.5s" fill="freeze"/>
+  </text>
+
+  <!-- Subtítulo -->
+  <text x="450" y="120" text-anchor="middle" font-size="20" font-family="monospace"
+        fill="#c9d1d9" opacity="0">
+    Full-Stack Developer
+    <animate attributeName="opacity" from="0" to="1" begin="3s" dur="1s" fill="freeze"/>
+  </text>
+
+  <!-- Linhas e bolinhas -->
+  <line x1="300" y1="180" x2="600" y2="180" stroke="#36BCF7" stroke-width="2" stroke-dasharray="10 10">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="450" y1="200" x2="450" y2="400" stroke="#36BCF7" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Bolinhas com glow mais forte -->
+  <defs>
+    <filter id="glowHorizontal" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6 2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="450" cy="240" r="5" fill="#36BCF7" filter="url(#glowHorizontal)"/>
+  <circle cx="450" cy="280" r="5" fill="#36BCF7" filter="url(#glowHorizontal)"/>
+  <circle cx="450" cy="320" r="5" fill="#36BCF7" filter="url(#glowHorizontal)"/>
+  <circle cx="450" cy="360" r="5" fill="#36BCF7" filter="url(#glowHorizontal)"/>
+
+  <!-- Texto das ações -->
+  <text x="430" y="245" text-anchor="end" font-size="14" fill="#8b949e" font-family="monospace" opacity="0">
+    Aprenda…
+    <animate attributeName="opacity" from="0" to="1" begin="4.5s" dur="0.4s" fill="freeze"/>
+  </text>
+  <text x="470" y="285" text-anchor="start" font-size="14" fill="#8b949e" font-family="monospace" opacity="0">
+    Construa…
+    <animate attributeName="opacity" from="0" to="1" begin="4.9s" dur="0.4s" fill="freeze"/>
+  </text>
+  <text x="430" y="325" text-anchor="end" font-size="14" fill="#8b949e" font-family="monospace" opacity="0">
+    Erre…
+    <animate attributeName="opacity" from="0" to="1" begin="5.3s" dur="0.4s" fill="freeze"/>
+  </text>
+  <text x="470" y="365" text-anchor="start" font-size="14" fill="#8b949e" font-family="monospace" opacity="0">
+    Melhore.
+    <animate attributeName="opacity" from="0" to="1" begin="5.7s" dur="0.4s" fill="freeze"/>
+  </text>
+
+  <!-- Contatos alinhados à esquerda -->
+  <g transform="translate(50, 380)">
+
+    <!-- LinkedIn -->
+    <a xlink:href="https://www.linkedin.com/in/SEU_USUARIO" target="_blank">
+      <rect x="0" y="0" width="36" height="36" rx="6" fill="#161b22"/>
+      <!-- Ícone do LinkedIn correto -->
+      <path d="M10 14h4v12h-4z
+               M12 10a2 2 0 1 1 0-4
+               2 2 0 0 1 0 4zm6 4h4v2h.1
+               c.6-1.1 2-2.2 4.1-2.2
+               4.4 0 5.2 2.9 5.2 6.6V26
+               h-4v-5.3c0-1.3 0-3-1.9-3
+               s-2.2 1.4-2.2 2.9V26h-4z"
+            fill="#36BCF7" transform="scale(0.8) translate(3 4)"/>
+    </a>
+    <text x="45" y="24" font-size="16" fill="#c9d1d9" font-family="monospace">linkedin.com/in/SEU_USUARIO</text>
+
+    <!-- E-mail -->
+    <a xlink:href="mailto:Cristianozeppe.dev@gmail.com" target="_blank" transform="translate(0, 50)">
+      <rect x="0" y="0" width="36" height="36" rx="6" fill="#161b22"/>
+      <path d="M8 12 H28 V24 H8 Z M8 12 L18 19 L28 12 M8 24 L14 19 M28 24 L22 19"
+            fill="none" stroke="#36BCF7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    </a>
+    <text x="45" y="24" transform="translate(0,50)" font-size="16" fill="#c9d1d9" font-family="monospace">Cristianozeppe.dev@gmail.com</text>
+
+  </g>
+
+</svg>
