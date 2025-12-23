@@ -129,19 +129,19 @@
 
        <!-- Texto das ações -->
   <text x="430" y="225" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
-    Aprenda
+    Learn
     <animate attributeName="opacity" from="0" to="1" begin="2s" dur="2s" fill="freeze"/>
   </text>
   <text x="470" y="265" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
-    Construa
+    Build
     <animate attributeName="opacity" from="0" to="1" begin="2.5s" dur="2.5s" fill="freeze"/>
   </text>
   <text x="430" y="305" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
-    Erre
+    Fail
     <animate attributeName="opacity" from="0" to="1" begin="3s" dur="3s" fill="freeze"/>
   </text>
   <text x="470" y="345" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
-    Melhore
+    Improve
     <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="3.5s" fill="freeze"/>
   </text>
 
