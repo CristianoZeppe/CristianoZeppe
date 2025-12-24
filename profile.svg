@@ -128,19 +128,19 @@
     </circle>
 
     <!-- Texto das ações -->
-    <text x="480" y="200" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    <text x="480" y="205" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Learn
         <animate attributeName="opacity" from="0" to="1" begin="3s" dur="1.2s" fill="freeze"/>
     </text>
-    <text x="520" y="245" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    <text x="520" y="250" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Build
         <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="1.2s" fill="freeze"/>
     </text>
-    <text x="480" y="290" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    <text x="480" y="295" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Fail
         <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="1.2s" fill="freeze"/>
     </text>
-    <text x="520" y="335" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    <text x="520" y="340" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Improve
         <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="1.2s" fill="freeze"/>
     </text>
