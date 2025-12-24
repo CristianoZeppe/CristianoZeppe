@@ -3,7 +3,6 @@
     height="460"
     viewBox="0 0 1000 460"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
 >
     <!-- Fundo -->
     <rect width="1000" height="460" fill="#0d1117" />
@@ -82,7 +81,7 @@
         />
     </line>
 
-    <!-- Linha vertical com bolinhas -->
+    <!-- Linha vertical -->
     <line
         x1="500"
         y1="170"
@@ -103,58 +102,67 @@
         />
     </line>
 
-    <!-- Bolinhas com glow -->
+    <!-- Glow -->
     <defs>
         <filter id="glowHorizontal" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="6 2" result="blur"/>
+            <feGaussianBlur stdDeviation="6 2" result="blur" />
             <feMerge>
-                <feMergeNode in="blur"/>
-                <feMergeNode in="SourceGraphic"/>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
             </feMerge>
         </filter>
     </defs>
 
+    <!-- Bolinhas -->
     <circle cx="500" cy="200" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" begin="3s" dur="1.2s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3s" dur="1.2s" fill="freeze" />
     </circle>
     <circle cx="500" cy="245" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="1.2s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="1.2s" fill="freeze" />
     </circle>
     <circle cx="500" cy="290" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="1.2s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="1.2s" fill="freeze" />
     </circle>
     <circle cx="500" cy="335" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="1.2s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="1.2s" fill="freeze" />
     </circle>
 
-    <!-- Texto das ações -->
+    <!-- Textos -->
     <text x="480" y="205" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Learn
-        <animate attributeName="opacity" from="0" to="1" begin="3s" dur="1.2s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3s" dur="1.2s" fill="freeze" />
     </text>
     <text x="520" y="250" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Build
-        <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="1.2s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="1.2s" fill="freeze" />
     </text>
     <text x="480" y="295" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Fail
-        <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="1.2s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="1.2s" fill="freeze" />
     </text>
     <text x="520" y="340" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Improve
-        <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="1.2s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="1.2s" fill="freeze" />
     </text>
 
-    <!-- Call-to-action com máscara -->
+    <!-- Call to action -->
     <defs>
         <mask id="calltoAction">
             <rect x="250" y="400" width="0" height="40" fill="white">
-                <animate attributeName="width" from="0" to="500" dur="2s" begin="4.5s" fill="freeze"/>
+                <animate attributeName="width" from="0" to="500" dur="2s" begin="4.5s" fill="freeze" />
             </rect>
         </mask>
     </defs>
 
-    <text x="500" y="425" text-anchor="middle" font-size="16" fill="#c9d1d9" font-family="monospace" mask="url(#calltoAction)">
+    <text
+        x="500"
+        y="425"
+        text-anchor="middle"
+        font-size="16"
+        fill="#c9d1d9"
+        font-family="monospace"
+        mask="url(#calltoAction)"
+    >
         Confira meus projetos ou me envie uma mensagem!
     </text>
 </svg>
