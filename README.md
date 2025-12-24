@@ -1,6 +1,6 @@
 <!-- Perfil SVG -->
 <p align="center">
-  <<img src="profile.svg" alt="Perfil de Cristiano Zeppe" width="100%">
+  <<img src="profile.svg" alt="Perfil de Cristiano Zeppe" width="100%" height="100%">
 
 </p>
 
