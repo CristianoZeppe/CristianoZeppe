@@ -1,6 +1,7 @@
 <!-- Perfil SVG -->
 <p align="center">
-  <img src="profile.svg" alt="Perfil de Cristiano Zeppe" width="1000">
+  <<img src="profile.svg" alt="Perfil de Cristiano Zeppe" width="100%">
+>
 </p>
 
 <!-- Palavras-chave / SEO -->
