@@ -14,7 +14,7 @@
     <img src="LinkedinButton.svg" alt="LinkedIn" width="40" style="margin: 0 10px;">
   </a>
   <a href="mailto:Cristianozeppe.dev@gmail.com">
-    <img src="EmailButton.svg" alt="E-mail" width="40" style="margin: 0 10px;">
+    <img src="Emailbutton.svg" alt="E-mail" width="40" style="margin: 0 10px;">
   </a>
 </p>
 
