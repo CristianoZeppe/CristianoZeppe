@@ -21,7 +21,7 @@
 <!-- Call-to-action / Projetos -->
 <p align="center">
   Confira meus projetos e contribuições no GitHub:  
-  <a href="https://github.com/SeuUsuario" target="_blank"><strong>Meus Repositórios</strong></a>
+  <a href="https://github.com/CristianoZeppe?tab=repositories" target="_blank"><strong>Meus Repositórios</strong></a>
 </p>
 
 <!-- Sobre mim / resumo -->

@@ -11,7 +11,7 @@
     <!-- Nome centralizado com animação de contorno -->
     <text
         x="500"
-        y="80"
+        y="70"
         text-anchor="middle"
         font-size="52"
         font-family="monospace"
@@ -48,38 +48,17 @@
             from="0"
             to="1"
             begin="1s"
-            dur="2.5s"
-            fill="freeze"
-        />
-    </text>
-
-    <!-- Descrição pessoal com tecnologias -->
-    <text
-        x="500"
-        y="160"
-        text-anchor="middle"
-        font-size="16"
-        fill="#c9d1d9"
-        font-family="monospace"
-        opacity="0"
-    >
-        Apaixonado por aprender e criar | Front-End: HTML, CSS, JavaScript, TypeScript | React | Back-End: Node.js
-        <animate
-            attributeName="opacity"
-            from="0"
-            to="1"
-            begin="2s"
-            dur="2.5s"
+            dur="2s"
             fill="freeze"
         />
     </text>
 
     <!-- Linha horizontal -->
     <line
-        x1="350"
-        y1="190"
-        x2="650"
-        y2="190"
+        x1="300"
+        y1="150"
+        x2="700"
+        y2="150"
         stroke="#3193f8"
         stroke-width="2"
         stroke-dasharray="10 10"
@@ -89,15 +68,15 @@
             attributeName="opacity"
             from="0"
             to="1"
-            begin="2.5s"
-            dur="2.5s"
+            begin="2s"
+            dur="2s"
             fill="freeze"
         />
         <animate
             attributeName="stroke-dashoffset"
             from="0"
             to="50"
-            begin="2.5s"
+            begin="2s"
             dur="4s"
             repeatCount="indefinite"
         />
@@ -106,9 +85,9 @@
     <!-- Linha vertical com bolinhas -->
     <line
         x1="500"
-        y1="210"
+        y1="170"
         x2="500"
-        y2="392"
+        y2="390"
         stroke="#3193f8"
         stroke-width="2"
         stroke-dasharray="6 6"
@@ -118,7 +97,7 @@
             attributeName="opacity"
             from="0"
             to="1"
-            begin="3s"
+            begin="2.5s"
             dur="4s"
             fill="freeze"
         />
@@ -135,47 +114,47 @@
         </filter>
     </defs>
 
-    <circle cx="500" cy="235" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="1.5s" fill="freeze"/>
+    <circle cx="500" cy="200" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="3s" dur="1.2s" fill="freeze"/>
     </circle>
-    <circle cx="500" cy="275" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" begin="4s" dur="1.5s" fill="freeze"/>
+    <circle cx="500" cy="245" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="1.2s" fill="freeze"/>
     </circle>
-    <circle cx="500" cy="315" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" begin="4.5s" dur="1.5s" fill="freeze"/>
+    <circle cx="500" cy="290" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="1.2s" fill="freeze"/>
     </circle>
-    <circle cx="500" cy="355" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" begin="5s" dur="1.5s" fill="freeze"/>
+    <circle cx="500" cy="335" r="5" fill="#3193f8" filter="url(#glowHorizontal)" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="1.2s" fill="freeze"/>
     </circle>
 
     <!-- Texto das ações -->
-    <text x="480" y="240" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    <text x="480" y="200" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Learn
-        <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="1.5s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3s" dur="1.2s" fill="freeze"/>
     </text>
-    <text x="520" y="280" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    <text x="520" y="245" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Build
-        <animate attributeName="opacity" from="0" to="1" begin="4s" dur="1.5s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="1.2s" fill="freeze"/>
     </text>
-    <text x="480" y="320" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    <text x="480" y="290" text-anchor="end" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Fail
-        <animate attributeName="opacity" from="0" to="1" begin="4.5s" dur="1.5s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="1.2s" fill="freeze"/>
     </text>
-    <text x="520" y="360" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
+    <text x="520" y="335" text-anchor="start" font-size="14" fill="#c9d1d9" font-family="monospace" opacity="0">
         Improve
-        <animate attributeName="opacity" from="0" to="1" begin="5s" dur="1.5s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="1.2s" fill="freeze"/>
     </text>
 
     <!-- Call-to-action com máscara -->
     <defs>
         <mask id="calltoAction">
-            <rect x="250" y="405" width="0" height="40" fill="white">
-                <animate attributeName="width" from="0" to="500" dur="2s" begin="5s" fill="freeze"/>
+            <rect x="250" y="400" width="0" height="40" fill="white">
+                <animate attributeName="width" from="0" to="500" dur="2s" begin="4.5s" fill="freeze"/>
             </rect>
         </mask>
     </defs>
 
-    <text x="500" y="420" text-anchor="middle" font-size="16" fill="#c9d1d9" font-family="monospace" mask="url(#calltoAction)">
+    <text x="500" y="425" text-anchor="middle" font-size="16" fill="#c9d1d9" font-family="monospace" mask="url(#calltoAction)">
         Confira meus projetos ou me envie uma mensagem!
     </text>
 </svg>
